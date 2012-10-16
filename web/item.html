@@ -26,6 +26,7 @@ BSD-style license that can be found in the LICENSE file.
   import 'dart:html';
   import 'model.dart';
   import 'package:web_components/web_component.dart';
+  import 'package:objectory/objectory.dart';
 
   class TodoItemComponent extends WebComponent {
     Todo todo;
@@ -77,6 +78,7 @@ BSD-style license that can be found in the LICENSE file.
       if (index != -1) {
         list.removeRange(index, 1);
       }
+      todo.remove();
     }
   }
   </script>
