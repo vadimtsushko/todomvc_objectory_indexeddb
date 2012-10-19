@@ -37,10 +37,7 @@ class App {
   App() : todos = <Todo>[];
 }
 
-class Todo extends PersistentObject {
-  
-  String get dbType() => 'Todo';
-  
+class Todo extends PersistentObject {  
   String get task() => getProperty('task');
   set task(String value) => setProperty('task',value);  
 
@@ -52,7 +49,6 @@ class Todo extends PersistentObject {
     task = newTask;
     saveOnUpdate = true;
   }
-  //String toString() => "$task ${done ? '(done)' : '(not done)'}";
 }
 ObjectoryQueryBuilder get $Todo => new ObjectoryQueryBuilder('Todo');
 
