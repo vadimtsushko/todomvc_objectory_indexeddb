@@ -38,10 +38,10 @@ class App {
 }
 
 class Todo extends PersistentObject {  
-  String get task() => getProperty('task');
+  String get task => getProperty('task');
   set task(String value) => setProperty('task',value);  
 
-  bool get done() => getProperty('done');
+  bool get done => getProperty('done');
   set done(bool value) => setProperty('done',value);        
   
   Todo(String newTask) {

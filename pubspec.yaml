@@ -1,7 +1,7 @@
 name: todomvc_objectory_indexeddb
 description: TodoMVC built with Web Components. Persistency added through Objectory on IndexedDB
-version: 0.0.1
+version: 0.0.2
 dependencies:
-  web_components: ">=0.1.0 <0.2.0"
+  web_components: ">=0.2.5 <0.2.6"      
   objectory:
     git: https://github.com/vadimtsushko/objectory.git
